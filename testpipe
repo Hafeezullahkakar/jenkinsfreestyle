@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'python3 prep.py'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'python3 prep2.py'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'python3 prep.py'
+            }
+        }
+    }
+}
