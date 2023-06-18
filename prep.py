@@ -1,1 +1,1 @@
-pritn("prep for freestyle paper")
+print("prep for freestyle paper")
